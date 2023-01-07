@@ -15,7 +15,9 @@
     justify-content: center;
     object-fit: contain;
     margin: auto;
-    margin-top: 2rem;   
+    margin-top: 2rem;  
+    padding-left: 15px; 
+    padding-right: 15px;
 }
 .bicon{
     padding-left: 26rem;
@@ -57,4 +59,32 @@
     100%{
         transform: rotate(360deg);
     }
+}
+
+@media screen and (max-width:768px){
+    .container>div{
+        align-items: center;
+        justify-content: center;
+    }
+    .content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 250px;
+    height: 130px;
+    border-radius: 10px;
+    background-color: rgb(236, 60, 60);  
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    margin: auto;
+    margin-top: 2rem;  
+    padding-left: 15px; 
+    padding-right: 15px;
+    font-size: 10px;
+}
+.bicon{
+    padding-left: 8rem;
+}
 }

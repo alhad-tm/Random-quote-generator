@@ -18,3 +18,8 @@ a:link{
 a{
     color: white;
 }
+@media screen and (max-width:768px){
+    .container{
+        gap: 2rem;
+    }
+}
