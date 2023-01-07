@@ -1,20 +1,21 @@
-import React from 'react'
-import css from "./Bookmarks.module.css"
+import React from "react";
+import { useSelector } from "react-redux";
+import css from "./Bookmarks.module.css";
 
 const Bookmark = () => {
+  const items = useSelector((state) => state);
+  console.log(items, "bookitem");
   return (
-    <div className={css.container}> 
+    <div className={css.container}>
+      <div className={css.content}>
+        <span>{items.quote.data && items.quote.data.content}</span>
 
-    <div className={css.content}>
-         <span>i am thankful to those who said no to me, because of them i did it myself</span>
-         
-        <span>-albert einstein</span>  
-         
+        <span style={{ fontWeight: "700" }}>
+          -{items.quote.data && items.quote.data.author}
+        </span>
+      </div>
     </div>
-    
+  );
+};
 
-</div>
-  )
-}
-
-export default Bookmark
+export default Bookmark;

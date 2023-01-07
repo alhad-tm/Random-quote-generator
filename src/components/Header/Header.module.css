@@ -1,25 +1,23 @@
-.container{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
-   gap:40rem;
-   color: white;
-   font-weight: 400;    
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  gap: 40rem;
+  color: white;
+  font-weight: 400;
 }
-.spans{
-   
-    font-size: 1rem;
-   
+.spans {
+  font-size: 1rem;
 }
-a:link{
-    text-decoration: none;
-    color: white;
+a:link {
+  text-decoration: none;
+  color: white;
 }
-a{
-    color: white;
+a {
+  color: white;
 }
-@media screen and (max-width:768px){
-    .container{
-        gap: 2rem;
-    }
+@media screen and (max-width: 768px) {
+  .container {
+    gap: 2rem;
+  }
 }

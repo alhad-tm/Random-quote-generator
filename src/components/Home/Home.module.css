@@ -1,90 +1,90 @@
-.container>div{
+.container > div {
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 600px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgb(236, 60, 60);
+  color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  margin: auto;
+  margin-top: 2rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.bicon {
+  padding-left: 26rem;
+  cursor: pointer;
+}
+.btn {
+  color: white;
+  background-color: rgb(22, 171, 45);
+  padding: 8px 20px;
+  border: none;
+  border-radius: 25px;
+  margin-top: 2rem;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease 1000ms;
+  color: rgb(207, 179, 179);
+}
+.load {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: aliceblue;
+  gap: 1rem;
+}
+.circle {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 7px solid rgb(230, 212, 212);
+  margin: auto;
+  margin-top: 20rem;
+  border-right-color: rgb(80, 197, 30);
+  animation: spin 2s ease infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container > div {
     align-items: center;
     justify-content: center;
-}
-.content{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 600px;
-    height: 200px;
-    border-radius: 10px;
-    background-color: rgb(236, 60, 60);  
-    color: aliceblue;
-    align-items: center;
-    justify-content: center;
-    object-fit: contain;
-    margin: auto;
-    margin-top: 2rem;  
-    padding-left: 15px; 
-    padding-right: 15px;
-}
-.bicon{
-    padding-left: 26rem;
-}
-.btn{
-    color: white;
-    background-color: rgb(22, 171, 45);
-    padding: 8px 20px;
-    border: none;
-    border-radius: 25px;
-    margin-top: 2rem;
-}
-.btn:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: ease 1000ms;
-    color: rgb(207, 179, 179);
-
-}
-.load{
-    display: flex;
-    flex-direction: column;
-   margin: auto;
-    color: aliceblue;
-    gap: 1rem;
-}
-.circle{
-    display: flex;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border:7px solid rgb(230, 212, 212);
-    margin: auto;
-    margin-top: 20rem;
-    border-right-color: rgb(80, 197, 30);
-    animation: spin 2s ease infinite;
-}
-@keyframes spin{
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-@media screen and (max-width:768px){
-    .container>div{
-        align-items: center;
-        justify-content: center;
-    }
-    .content{
+  }
+  .content {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 250px;
     height: 130px;
     border-radius: 10px;
-    background-color: rgb(236, 60, 60);  
+    background-color: rgb(236, 60, 60);
     color: aliceblue;
     align-items: center;
     justify-content: center;
     object-fit: contain;
     margin: auto;
-    margin-top: 2rem;  
-    padding-left: 15px; 
+    margin-top: 2rem;
+    padding-left: 15px;
     padding-right: 15px;
     font-size: 10px;
-}
-.bicon{
+  }
+  .bicon {
     padding-left: 8rem;
-}
+  }
 }
