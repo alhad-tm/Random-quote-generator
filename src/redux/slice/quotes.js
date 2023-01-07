@@ -3,7 +3,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
 export const fetchQuotes = createAsyncThunk("fetchQuotes", async () => {
-  const response = await axios.get("http://api.quotable.io/random");
+  const response = await axios.get("https://api.quotable.io/random");
   console.log(response.data, "axios data");
   return response.data;
 });
