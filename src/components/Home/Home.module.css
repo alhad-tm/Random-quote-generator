@@ -35,3 +35,26 @@
     color: rgb(207, 179, 179);
 
 }
+.load{
+    display: flex;
+    flex-direction: column;
+   margin: auto;
+    color: aliceblue;
+    gap: 1rem;
+}
+.circle{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border:7px solid rgb(230, 212, 212);
+    margin: auto;
+    margin-top: 20rem;
+    border-right-color: rgb(80, 197, 30);
+    animation: spin 2s ease infinite;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
