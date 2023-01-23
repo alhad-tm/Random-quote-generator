@@ -9,6 +9,8 @@ const Bookmark = () => {
     <div className={css.container}>
       <div className={css.content}>
         <span>{items.quote.data && items.quote.data.content}</span>
+        <span>hi</span>
+        <h1>hello</h1>
 
         <span style={{ fontWeight: "700" }}>
           -{items.quote.data && items.quote.data.author}
